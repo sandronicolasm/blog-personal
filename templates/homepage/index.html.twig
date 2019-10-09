@@ -1,0 +1,535 @@
+{% extends 'base.html.twig' %}
+
+
+{% block content %}
+    <body id="home"  data-spy="scroll"  data-target=".sidebar"  data-offset="50">
+
+    <!--	Sidebar   -->
+    <div class="navbar navbar-light  fixed-top"  data-spy="affix"  data-offset-top="50">
+        <a href="#" class="navbar-brand p0 pt5"><h5>Sandro Nicolas Mañez</h5></a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <button class="sidebarBtn nav-link">
+                    <span class="line"></span>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar">
+        <ul class="side-item">
+            <li class="side-link"><a href="#home" class="">Home</a></li>
+            <li class="side-link"><a href="#about" class="">About</a></li>
+            <li class="side-link"><a href="#work" class="">Work</a></li>
+            <li class="side-link"><a href="#service" class="">Service</a></li>
+            <li class="side-link"><a href="#work-ex" class="">Work Experience</a></li>
+            <li class="side-link"><a href="#skills" class="">Skills</a></li>
+            <li class="side-link"><a href="#testimonial" class="">Testimonial</a></li>
+            <li class="side-link"><a href="#blog" class="">Blog</a></li>
+            <li class="side-link"><a href="#contact" class="">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--	Wrapper  -->
+    <div class="wrapper">
+        <div class="overlay text-center">
+            <div class="overlay-content">
+                <img src="{{ asset('img/Nicolas.jpeg') }}" class="circle-100 d-block red" alt="Foto Sandro Nicolas Mañez">
+                <h1 class="text-white myfont">Sandro Nicolas Mañez</h1>
+                <span class="type p-font text-white"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!--    Main Content  -->
+    <div class="container-fluid">
+
+        <!-- About Section    -->
+        <div class="row" id="about">
+            <div class="col-xs-12 col-md-6 p0 wow fadeIn" data-wow-delay=".3s"> <img src="img/about.jpg" class="img-responsive" width="100%" height="auto"></div>
+            <div class="col-xs-12 col-sm-12 col-md-6 wow fadeIn" data-wow-delay=".7s">
+                <div class="row">
+                    <div id="owl-about" class="slider-active owl-carousel ">
+                        <div class="item">
+                            <div class="col-xs-10 col-sm-9 col-md-8 m-auto">
+                                <p class="pt150">Nacido en Río Cuarto y habitante de la Localidad de Las Higueras. Desde mi niñés pasé por los constantes avances tecnológicos. De jóven me apasionó la música y fui cantante de folcklore. Al ser mayor pasé por trabajos en los cuáles no sentía vocación ni pasión. A la edad de 23 años me dí cuenta de que lo que tanto busqué aparecía frente a mis ojos todos los días. Fue entonces cuando decidí que quería estar del otro lado de eso que "aparecía" todos los días frente amí; convertirla en mi carrera de vida, mi meta a superar constantemente y sin límites.</p>
+                                <h6 class="pt30">Nicolas Mañez</h6>
+                                <img src="img/signature.png" alt="Imágen de Nicolas Mañez" class="ml50 pb150" style="opacity: .7; width: 120px;">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-10 col-sm-9 col-md-8 m-auto">
+                                <h6 class="pb10 pt150 pl50"><strong class="pr15">Name :</strong> Nicolas Mañez</h6>
+                                <h6 class="pb10 pl50"><strong class="pr12">Phone :</strong> +54 9358 4201876</h6>
+                                <h6 class="pb10 pl50"><strong class="pr15">Email :</strong> info@nicolasmanez.com</h6>
+                                <h6 class="pb10 pl50"><strong class="pr13">Address :</strong>Liniers 1714, Río Cuarto, Córdoba. Argentina</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Section    -->
+        <div class="row  bg-light" id="work">
+            <div class="col-sm-10 col-md-2 pl50 pt100 pb50 wow fadeIn">
+                <h3>Work</h3>
+                <p class="pt30">Trabajos</p>
+            </div>
+            <div class="col-xs-10 col-sm-12 col-md-9 ml-auto">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-6 col-md-4 p0 content wow fadeIn" data-wow-delay=".3s">
+                        <a href="img/work-1.jpg"  data-lightbox="imgModals" class="c-zoom">
+                            <img src="img/work-1.jpg" alt="template by DevCRID http://devcrud.com/" class=" img" width="100%" height="auto" >
+                            <div class="middle">
+                                <div class="title">
+                                    <h5 class="text-white pb30">Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ullam inventore.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 p0  content wow fadeIn" data-wow-delay=".6s">
+                        <a href="img/work-2.jpg"  data-lightbox="imgModals" class="c-zoom">
+                            <img src="img/work-2.jpg" alt="template by DevCRID http://devcrud.com/" class=" img" width="100%" height="auto" >
+                            <div class="middle">
+                                <div class="title">
+                                    <h5 class="text-white pb30">Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ullam inventore.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 p0  content wow fadeIn" data-wow-delay=".9s">
+                        <a href="img/work-3.jpg"  data-lightbox="imgModals" class="c-zoom">
+                            <img src="img/work-3.jpg" alt="template by DevCRID http://devcrud.com/" class=" img" width="100%" height="auto" >
+                            <div class="middle">
+                                <div class="title">
+                                    <h5 class="text-white pb30">Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ullam inventore.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 p0  content wow fadeIn" data-wow-delay=".3s">
+                        <a href="img/work-4.jpg"  data-lightbox="imgModals" class="c-zoom">
+                            <img src="img/work-4.jpg" alt="template by DevCRID http://devcrud.com/" class=" img" width="100%" height="auto" >
+                            <div class="middle">
+                                <div class="title">
+                                    <h5 class="text-white pb30">Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ullam inventore.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 p0  content wow fadeIn" data-wow-delay=".6s">
+                        <a href="img/work-5.jpg"  data-lightbox="imgModals" class="c-zoom">
+                            <img src="img/work-5.jpg" alt="template by DevCRID http://devcrud.com/" class=" img" width="100%" height="auto" >
+                            <div class="middle">
+                                <div class="title">
+                                    <h5 class="text-white pb30">Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ullam inventore.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-10 col-sm-6 col-md-4 p0  content wow fadeIn" data-wow-delay=".9s">
+                        <a href="img/work-6.jpg"  data-lightbox="imgModals" class="c-zoom">
+                            <img src="img/work-6.jpg" alt="template by DevCRID http://devcrud.com/" class=" img" width="100%" height="auto" >
+                            <div class="middle">
+                                <div class="title">
+                                    <h5 class="text-white pb30">Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ullam inventore.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Services Section  -->
+        <div class="row  pb50" id="service">
+            <div class="col-sm-12 col-md-2 pt100 pl50 pb50 wow fadeIn">
+                <h3>Services</h3>
+                <p class="pt30">Cada solución a su justa medida. Aquí puedes ver en lo que puedo ayudarte. </p>
+            </div>
+            <div class="col-sm-10 pt50 col-md-8 mr70 m-auto wow fadeIn" data-wow-delay=".5s">
+                <div class="row">
+                    <div class="col-sm-4 border .hidden-xs  border-secondary border-top-0 border-left-0 pt20 pb20 xs-border-none">
+                        <span><i class="lnr lnr-sun font25"></i></span>
+                        <h5 class="pt5 pb10 font18">Director</h5>
+                        <p>Dirección de proyectos utilizando metodologías ágiles de desarrollo, estimando tiempos de entrega, distribuyendo tareas según las características de los integrante del equipo.</p>
+                    </div>
+                    <div class="col-sm-4 border border-secondary border-top-0 border-left-0 pt20 pb20 xs-border-none">
+                        <span><i class="lnr lnr-magic-wand font25"></i></span>
+                        <h5 class="pt5 pb10 font18">Develop</h5>
+                        <p>Desarrollo de software desde el planeamiento hasta la puesta en producción. Utilizando las tecnologías adecuadas para cada necesidad.</p>
+                    </div>
+                    <div class="col-sm-4 border border-secondary border-top-0 border-left-0 border-right-0 pt20 pb20 xs-border-none">
+                        <span><i class="lnr lnr-code font25"></i></span>
+                        <h5 class="pt5 pb10 font18">Clean Code</h5>
+                        <p>Código limpio y aplicando buenas prácticas de programación. Pensando en proyectos escalables.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 border border-secondary border-top-0 border-bottom-0 border-left-0 pt20 pb20 xs-border-none">
+                        <span><i class="lnr lnr-layers font25"></i></span>
+                        <h5 class="pt5 pb10 font18">UI</h5>
+                        <p>La experiencia de usuario garantiza grandes volúmenes de clientes potenciales y posibles seguidores de tu marca.</p>
+                    </div>
+                    <div class="col-sm-4 border border-secondary border-top-0 border-bottom-0 border-left-0 pt20 pb20 xs-border-none">
+                        <span><i class="lnr lnr-laptop-phone font25"></i></span>
+                        <h5 class="pt5 pb10 font18">Responsive</h5>
+                        <p>Cada app es Full Responsive, pudiendo ofrecer un mismo sitio para todos los dispositivos.</p>
+                    </div>
+                    <div class="col-sm-4 border border-secondary border-top-0 border-bottom-0 border-left-0 border-right-0 pt20 pb20 p10 xs-border-none">
+                        <span><i class="lnr lnr-rocket font25"></i></span>
+                        <h5 class="pt5 pb10 font18">Front End</h5>
+                        <p>Vistas con funcionalidades personales que hacen que tu marca se vea flor de piel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work-ex Section-->
+        <div class="row pb50 bg-light" id="work-ex">
+            <div class="col-sm-12 pt100 col-md-2 pl50 pb50 wow fadeIn">
+                <h3>Work Experience</h3>
+                <p class="pt30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eaque quas necessitatibus ex illum hic placeat accusantium cumque, fugit ea provident minus ut eligendi amet, unde animi culpa rem aperiam.</p>
+            </div>
+            <div class="col-xs-12 pt50 col-sm-12 col-md-9 m-auto">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 mb20 wow fadeIn"  data-wow-delay=".3s">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h2>2016 <br> <span class="font20"> May - Now</span></h2>
+                                <h5></h5>
+                                <h5 class="font14 pt10 pb10"><strong>Web Developer</strong></h5>
+                                <span class="badge badge-secondary">Local Company</span>
+                                <hr>
+                                <p>
+                                    Comenzando con mi carrera como desarrollador enfrenté mis primeros desafíos con proyectos de tiendas virtuales para farmacias de Cadena Nacional y Provincial.
+                                    Los mismos integraban un sistema de fidelización de clientes reconocido a nivel internacional.
+                                    Todo fue posible de la mano de una empresa de marketing de relaciones para la cual
+                                    actualmente sigo brindándoles soluciones y mejoras.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 mb20 wow fadeIn"  data-wow-delay=".6s">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h2>2018 <br> <span class="font20"> May - Now</span></h2>
+                                <h5></h5>
+                                <h5 class="font14 pt10 pb10"><strong>IT</strong></h5>
+                                <span class="badge badge-secondary">Spanish Company</span>
+                                <hr>
+                                <p>Ya contando con experiencia en desarrollos fui requerido por Andrés Karp, presidente de la <a href="https://www.asociacion361.es/" target="_blank"><strong>Asociación de Empresas de Publicidad de la Provincia de Alicante 361º</strong></a>  y CEO de la <a href="http://dinamicbrain.com/" target="_blank"> <strong>Smart Agency Dinamicbrain</strong></a>
+                                    , para quien con mucha gratitud actualmente desarrollo de manera remota múltiples proyectos; así como también puedo dar mantenimiento a problemas que surgen de antiguos y crecer todos los días.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 mb20 wow fadeIn"  data-wow-delay=".9s">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h2>2018 <br> <span class="font20"> Abr - Now</span></h2>
+                                <h5></h5>
+                                <h5 class="font14 pt10 pb10"><strong>CEO</strong></h5>
+                                <span class="badge badge-secondary">Co-founder</span>
+                                <hr>
+                                <p>Junto a mi hermano y un compañero de la Universidad fundamos <a href="https://www.sigma3web.com"><strong>Sigma3</strong></a> y día a día luchamos por hacer crecer este sueño. Hemos desarrollado sistemas web para empresas locales.
+                                    Apuntamos a soluciones socio-tecnológicas inteligentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Skills Section -->
+        <div class="row pb50" id="skills">
+            <div class="col-sm-12 col-md-3 pt100 pl50 pb50">
+                <h3>Skills</h3>
+                <p class="pt30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eaque quas necessitatibus ex illum hic placeat accusantium cumque, fugit ea provident minus ut eligendi amet, unde animi culpa rem aperiam.</p>
+            </div>
+            <div class="col-sm-10 pt50 col-md-8 m-auto">
+                HTML<sup>5</sup>
+                <div class="progress mb20 ">
+                    <div class="progress-bar bg-secondary " role="progressbar" aria-valuenow="25" style="width: 90%;" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                CSS<sup>3</sup>
+                <div class="progress mb20 ">
+                    <div class="progress-bar bg-secondary " role="progressbar" aria-valuenow="25" style="width: 85%;" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+                Jquery
+                <div class="progress mb20 ">
+                    <div class="progress-bar bg-secondary " role="progressbar" aria-valuenow="25" style="width: 75%;" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                PHP
+                <div class="progress mb20 ">
+                    <div class="progress-bar bg-secondary " role="progressbar" aria-valuenow="25" style="width: 65%;" aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+                Photoshop
+                <div class="progress mb20 ">
+                    <div class="progress-bar bg-secondary " role="progressbar" aria-valuenow="25" style="width:
+					85%;" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--testimonial-->
+    <div class="wrapper-testimonial col-xs-12" id="testimonial">
+        <div class="overlay-testimonial p50">
+            <div id="owl-skills" class="owl-carousel slider-active">
+                <div class="item text-center text-white col-md-9 m-auto wow fadeIn">
+                    <img src="img/testimonial-1.jpg" alt="template by DevCRID http://devcrud.com/" class="circle-150 m-auto wow fadeIn" data-wow-delay=".2s">
+                    <h5 class="font18 pt30 text-white font25 wow fadeIn" data-wow-delay=".5s">Nicolas Mañez</h5>
+                    <p class="font20 wow fadeIn" data-wow-delay=".8s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia esse accusantium reiciendis eius quisquam corporis ducimus beatae iusto vitae, quidem  temporibus necessitatibus ea provident! Eius expedita quaerat consequatur laboriosam.</p>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm wow fadeIn" data-wow-delay="1s"><i class="fa fa-facebook"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm wow fadeIn" data-wow-delay="1.2s"><i class="fa fa-twitter"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm wow fadeIn" data-wow-delay="1.4s"><i class="fa fa-google-plus"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm wow fadeIn" data-wow-delay="1.6s"><i class="fa fa-github"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm wow fadeIn" data-wow-delay="1.8s"><i class="fa fa-skype"></i></button>
+                </div>
+                <div class="item text-center text-white col-md-9 m-auto">
+                    <img src="img/testimonial-2.jpg" alt="template by DevCRID http://devcrud.com/" class="circle-150 m-auto">
+                    <h5 class="font18 pt30 text-white font25">Nicolas Mañez</h5>
+                    <p class="font20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia esse accusantium reiciendis eius quisquam corporis ducimus beatae iusto vitae, quidem  temporibus necessitatibus ea provident! Eius expedita quaerat consequatur laboriosam.</p>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-facebook"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-twitter"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-google-plus"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-github"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-skype"></i></button>
+                </div>
+                <div class="item text-center text-white col-md-9 m-auto">
+                    <img src="img/testimonial-3.jpg" alt="template by DevCRID http://devcrud.com/" class="circle-150 m-auto">
+                    <h5 class="font18 pt30 text-white font25">Nicolas Mañez</h5>
+                    <p class="font20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia esse accusantium reiciendis eius quisquam corporis ducimus beatae iusto vitae, quidem  temporibus necessitatibus ea provident! Eius expedita quaerat consequatur laboriosam.</p>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-facebook"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-twitter"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-google-plus"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-github"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-skype"></i></button>
+                </div>
+                <div class="item text-center text-white col-md-9 m-auto">
+                    <img src="img/testimonial-4.jpg" alt="template by DevCRID http://devcrud.com/" class="circle-150 m-auto">
+                    <h5 class="font18 pt30 text-white font25">Nicolas Mañez</h5>
+                    <p class="font20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia esse accusantium reiciendis eius quisquam corporis ducimus beatae iusto vitae, quidem  temporibus necessitatibus ea provident! Eius expedita quaerat consequatur laboriosam.</p>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-facebook"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-twitter"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-google-plus"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-github"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-skype"></i></button>
+                </div>
+                <div class="item text-center text-white col-md-9 m-auto">
+                    <img src="img/testimonial-5.jpg" alt="template by DevCRID http://devcrud.com/" class="circle-150 m-auto">
+                    <h5 class="font18 pt30 text-white font25">Nicolas Mañez</h5>
+                    <p class="font20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia esse accusantium reiciendis eius quisquam corporis ducimus beatae iusto vitae, quidem  temporibus necessitatibus ea provident! Eius expedita quaerat consequatur laboriosam.</p>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-facebook"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-twitter"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-google-plus"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-github"></i></button>
+                    <button type="button" class="btn btn-outline-secondary btn-social-sm"><i class="fa fa-skype"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Blog-->
+    <div class="container" id="blog">
+        <div class="row pt100 wow fadeIn">
+            <div class="col-md-8 m-auto text-center">
+                <h3>Blog</h3>
+                <p class="pt30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eaque quas necessitatibus ex illum hic placeat accusantium cumque, fugit ea provident minus ut eligendi amet, unde animi culpa rem aperiam.</p>
+            </div>
+        </div>
+        <div class="row pb50 mt30">
+            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".3s">
+                <div class="card">
+                    <img class="card-img-top" src="img/blog-1.jpg" alt="template by DevCRID http://devcrud.com/">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="float-left">
+                            <img src="img/avatars/img_avatar5.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
+                            <small>By: <b>Nicolas Mañez</b></small>
+                        </div>
+                        <div class="float-right">
+                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">213</span></small>
+                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">23</span></small>
+                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">91</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".6s">
+                <div class="card">
+                    <img class="card-img-top" src="img/blog-2.jpg" alt="template by DevCRID http://devcrud.com/">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="float-left">
+                            <img src="img/avatars/img_avatar4.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
+                            <small>By: <b>Nicolas Mañez</b></small>
+                        </div>
+                        <div class="float-right">
+                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">124</span></small>
+                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">36</span></small>
+                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">76</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".9s">
+                <div class="card">
+                    <img class="card-img-top" src="img/blog-3.jpg" alt="template by DevCRID http://devcrud.com/">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="float-left">
+                            <img src="img/avatars/img_avatar3.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
+                            <small>By: <b>Nicolas Mañez</b></small>
+                        </div>
+                        <div class="float-right">
+                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">98</span></small>
+                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">34</span></small>
+                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">56</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".3s">
+                <div class="card">
+                    <img class="card-img-top" src="img/blog-4.jpg" alt="template by DevCRID http://devcrud.com/">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="float-left">
+                            <img src="img/avatars/img_avatar2.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
+                            <small>By: <b>Nicolas Mañez</b></small>
+                        </div>
+                        <div class="float-right">
+                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">71</span></small>
+                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">37</span></small>
+                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">53</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".6s">
+                <div class="card">
+                    <img class="card-img-top" src="img/blog-5.jpg" alt="template by DevCRID http://devcrud.com/">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="float-left">
+                            <img src="img/avatars/img_avatar1.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
+                            <small>By: <b>Nicolas Mañez</b></small>
+                        </div>
+                        <div class="float-right">
+                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">47</span></small>
+                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">25</span></small>
+                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">21</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".9s">
+                <div class="card">
+                    <img class="card-img-top" src="img/blog-6.jpg" alt="template by DevCRID http://devcrud.com/">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="float-left">
+                            <img src="img/avatars/avatar.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
+                            <small>By: <b>Nicolas Mañez</b></small>
+                        </div>
+                        <div class="float-right">
+                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">20</span></small>
+                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">11</span></small>
+                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">22</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div class="container-fluid text-center bg-light pt100" id="contact">
+        <div class="row wow fadeIn">
+            <div class="col-md-7 m-auto">
+                <h3 class="pb30">Contact</h3>
+{#                <p class="pt30 pb70">#}
+{#                    #}
+{#                </p>#}
+            </div>
+        </div>
+        <div class="row text-left pb50">
+            <div class="col-sm-10 col-md-6 m-auto mb30 wow fadeIn"  data-wow-delay=".6s">
+                <h5>Send a Message</h5>
+                <p class="pt20 pb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input type="text" class="form-control" placeholder="Email" required>
+                    </div>
+                </div>
+                <textarea name="comments" id="comments" rows="8" class="form-control" placeholder="Comment"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-block btn-secondary" id="btn" type="submit">
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 wow fadeIn"  data-wow-delay=".9s">
+                <h5>Ge In Touch</h5>
+                <p class="pt20 pb10">You can also contact at</p>
+                <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-map-marker"></i></span><span class="pl20">Liniers 1714, Río Cuarto, Córdoba</span></p>
+                <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-phone"></i></span><span class="pl20">+54 9358 4201876</span></p>
+                <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-envelope"></i></span><span class="pl20">info@nicolasmanez.com</span></p>
+                <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-globe"></i></span><span class="pl20">www.sigma3web.com</span></p>
+{#                <h5 class="pt20 pb20">Follow </h5>#}
+{#                <button type="button" class="btn btn-secondary btn-social-md"><i class="fa fa-facebook"></i></button>#}
+{#                <button type="button" class="btn btn-secondary btn-social-md"><i class="fa fa-twitter"></i></button>#}
+{#                <button type="button" class="btn btn-secondary btn-social-md"><i class="fa fa-google-plus"></i></button>#}
+            </div>
+        </div>
+
+        <!--   footer  -->
+        <div class="row bg-secondary text-white">
+            <div class="col-sm-8 col-md-6 m-auto text-center pt50 pb50">
+                <h2 class="text-white pb20 wow fadeIn" data-wow-delay=".3s">Resume</h2>
+                <p class="pb40 wow fadeIn" data-wow-delay=".3s">"El único limite que existe, se encuentra en nuestra mente."</p>
+{#                <a href="#" class="btn btn-sm btn-outline-light mr10 wow fadeIn" data-wow-delay=".6s"><i class="fa fa-facebook"></i>-facebook</a>#}
+{#                <a href="#" class="btn btn-sm btn-outline-light mr10  wow fadeIn" data-wow-delay=".8s"><i class="fa fa-twitter"></i>-twitter</a>#}
+{#                <a href="#" class="btn btn-sm btn-outline-light mr10  wow fadeIn" data-wow-delay="1s"><i class="fa fa-google-plus"></i>-google+</a>#}
+{#                <a href="#" class="btn btn-sm btn-outline-light mr10  wow fadeIn" data-wow-delay="1.2s"><i class="fa fa-rss"></i>-rss feeds</a>#}
+                <p class="pt20  wow fadeIn" data-wow-delay="1.4s">&copy; Copyright <script>document.write(new Date().getFullYear())</script></p>
+{#                <p class=" wow fadeIn" data-wow-delay="1.6s">Bootstrap<sup>4</sup> Theme By <a href="http://devcrud.com" class="text-light">DevCRUD</a></p>#}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
