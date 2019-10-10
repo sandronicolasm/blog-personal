@@ -9,8 +9,10 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
+use Sonata\AdminBundle\Form\Type\ModelListType;
 use Sonata\AdminBundle\Form\Type\ModelType;
 use Sonata\Form\Type\BooleanType;
+use Sonata\MediaBundle\Form\Type\MediaType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -22,8 +24,18 @@ final class BlogPostAdmin extends AbstractAdmin
     $formMapper
       ->tab('Post')
         ->with('Contenido', ['class' => 'col-md-12'])
+        ->add('draft', BooleanType::class)
         ->add('title', TextType::class)
-        ->add('body', CKEditorType::class, [
+      ->add('picture', ModelListType::class,
+        array(
+        'btn_edit' => false,
+        'required' => true,
+        ), array(
+          'link_parameters' => array('context' => 'post')
+      ))
+      ->add('description', CKEditorType::class, [
+        ])
+      ->add('body', CKEditorType::class, [
 //          'config' => [
 //            'toolbar' => [
 //              [

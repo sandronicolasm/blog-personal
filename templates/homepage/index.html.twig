@@ -348,126 +348,28 @@
             </div>
         </div>
         <div class="row pb50 mt30">
+            {% for post in posts %}
             <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".3s">
-                <div class="card">
-                    <img class="card-img-top" src="img/blog-1.jpg" alt="template by DevCRID http://devcrud.com/">
+                <a href="#" class="card">
+                    <img class="card-img-top" src="{% path post.picture, 'big' %}" alt="{{ post.title|lower }}">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
+                        <h4 class="card-title">{{ post.title|lower }}</h4>
+                        <div class="card-text">{{ post.description|lower|raw }} </div>
                     </div>
                     <div class="card-footer">
                         <div class="float-left">
-                            <img src="img/avatars/img_avatar5.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
-                            <small>By: <b>Nicolas Mañez</b></small>
+                            <img src="{{ asset('img/Nicolas.jpeg') }}" alt="imágen Nicolas Mañez" class="circle-25">
+                            <small>By <b>Nicolas Mañez</b></small>
                         </div>
                         <div class="float-right">
-                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">213</span></small>
-                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">23</span></small>
-                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">91</span></small>
+{#                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">213</span></small>#}
+{#                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">23</span></small>#}
+{#                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">91</span></small>#}
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".6s">
-                <div class="card">
-                    <img class="card-img-top" src="img/blog-2.jpg" alt="template by DevCRID http://devcrud.com/">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="float-left">
-                            <img src="img/avatars/img_avatar4.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
-                            <small>By: <b>Nicolas Mañez</b></small>
-                        </div>
-                        <div class="float-right">
-                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">124</span></small>
-                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">36</span></small>
-                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">76</span></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".9s">
-                <div class="card">
-                    <img class="card-img-top" src="img/blog-3.jpg" alt="template by DevCRID http://devcrud.com/">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="float-left">
-                            <img src="img/avatars/img_avatar3.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
-                            <small>By: <b>Nicolas Mañez</b></small>
-                        </div>
-                        <div class="float-right">
-                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">98</span></small>
-                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">34</span></small>
-                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">56</span></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".3s">
-                <div class="card">
-                    <img class="card-img-top" src="img/blog-4.jpg" alt="template by DevCRID http://devcrud.com/">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="float-left">
-                            <img src="img/avatars/img_avatar2.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
-                            <small>By: <b>Nicolas Mañez</b></small>
-                        </div>
-                        <div class="float-right">
-                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">71</span></small>
-                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">37</span></small>
-                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">53</span></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".6s">
-                <div class="card">
-                    <img class="card-img-top" src="img/blog-5.jpg" alt="template by DevCRID http://devcrud.com/">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="float-left">
-                            <img src="img/avatars/img_avatar1.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
-                            <small>By: <b>Nicolas Mañez</b></small>
-                        </div>
-                        <div class="float-right">
-                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">47</span></small>
-                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">25</span></small>
-                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">21</span></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 mb35 wow fadeIn" data-wow-delay=".9s">
-                <div class="card">
-                    <img class="card-img-top" src="img/blog-6.jpg" alt="template by DevCRID http://devcrud.com/">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nobis vero iure, necessitatibus nihil voluptatum! Sunt, architecto. </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="float-left">
-                            <img src="img/avatars/avatar.png" alt="template by DevCRID http://devcrud.com/" class="circle-25">
-                            <small>By: <b>Nicolas Mañez</b></small>
-                        </div>
-                        <div class="float-right">
-                            <i class="fa fa-thumbs-up ml8"></i> <small><span class="text-dark">20</span></small>
-                            <i class="fa fa-thumbs-down ml8"></i> <small><span class="text-dark">11</span></small>
-                            <i class="fa fa-comments ml8"></i> <small><span class="text-dark">22</span></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
@@ -482,18 +384,42 @@
             </div>
         </div>
         <div class="row text-left pb50">
-            <div class="col-sm-10 col-md-6 m-auto mb30 wow fadeIn"  data-wow-delay=".6s">
+            {{ form_start(form, {'attr':{'class':'col-sm-10 col-md-6 m-auto mb30 wow fadeIn', 'data-wow-delay': '.6s'}}) }}
+
                 <h5>Send a Message</h5>
-                <p class="pt20 pb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p class="pt20 pb10">Si llegaste hasta aquí, talvez necesites contactarme .
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <input type="text" class="form-control" placeholder="Name">
+                        {{ form_widget(form.name, {'attr': {'class': 'form-control', 'placeholder': 'Name'}}) }}
+{#                        <input type="text" class="form-control" placeholder="Name">#}
                     </div>
                     <div class="col-sm-6 form-group">
-                        <input type="text" class="form-control" placeholder="Email" required>
+                        {{ form_widget(form.surname, {'attr': {'class': 'form-control', 'placeholder': 'Surname'}}) }}
                     </div>
                 </div>
-                <textarea name="comments" id="comments" rows="8" class="form-control" placeholder="Comment"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        {{ form_widget(form.telephone, {'attr': {'class': 'form-control', 'placeholder': 'Phone'}}) }}
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        {{ form_widget(form.email, {'attr': {'class': 'form-control', 'placeholder': 'Email'}}) }}
+                    </div>
+                </div>
+                {{ form_widget(form.content, {'attr': {'name': 'comments','id': 'comments','class': 'form-control', 'rows': '8','placeholder': 'Comment'}}) }}<br>
+                <div class="row">
+                    <div class="form-group check-terms col-12 mb-0">
+                        {{ form_widget(form.conditions, {'attr': {'class': 'd-inline'}}) }}
+                        <label for="form_terms" class="form-terms-text content-text">
+                            {#<a href="{{ path('legal') }}">#}
+                            <p class="check-text">
+                                He leído y acepto la
+                                <a href="{{ path('homepage') }}" class="text-orange">
+                                    Política de Privacidad*
+                                </a>
+                            </p>
+                        </label>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <button class="btn btn-block btn-secondary" id="btn" type="submit">
@@ -501,14 +427,15 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            {{ form_end(form) }}
             <div class="col-sm-10 col-md-4 wow fadeIn"  data-wow-delay=".9s">
                 <h5>Ge In Touch</h5>
                 <p class="pt20 pb10">You can also contact at</p>
+                <p><a href="tel:+5493584201876"><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-phone"></i></span><span class="pl20">+54 9358 4201876</span></a></p>
                 <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-map-marker"></i></span><span class="pl20">Liniers 1714, Río Cuarto, Córdoba</span></p>
-                <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-phone"></i></span><span class="pl20">+54 9358 4201876</span></p>
-                <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-envelope"></i></span><span class="pl20">info@nicolasmanez.com</span></p>
-                <p><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-globe"></i></span><span class="pl20">www.sigma3web.com</span></p>
+
+                <p><a href="mailto:sandronicolasm@gmail.com"><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-envelope"></i></span><span class="pl20">sandronicolasm@gmail.com</span></a></p>
+                <p><a href="https://api.whatsapp.com/send?phone=5493584201876" target="_blank"><span class="badge badge-secondary bdg-contact font18"><i class="fa fa-whatsapp"></i></span><span class="pl20">+549 358 4201876</span></a></p>
 {#                <h5 class="pt20 pb20">Follow </h5>#}
 {#                <button type="button" class="btn btn-secondary btn-social-md"><i class="fa fa-facebook"></i></button>#}
 {#                <button type="button" class="btn btn-secondary btn-social-md"><i class="fa fa-twitter"></i></button>#}
@@ -525,7 +452,7 @@
 {#                <a href="#" class="btn btn-sm btn-outline-light mr10  wow fadeIn" data-wow-delay=".8s"><i class="fa fa-twitter"></i>-twitter</a>#}
 {#                <a href="#" class="btn btn-sm btn-outline-light mr10  wow fadeIn" data-wow-delay="1s"><i class="fa fa-google-plus"></i>-google+</a>#}
 {#                <a href="#" class="btn btn-sm btn-outline-light mr10  wow fadeIn" data-wow-delay="1.2s"><i class="fa fa-rss"></i>-rss feeds</a>#}
-                <p class="pt20  wow fadeIn" data-wow-delay="1.4s">&copy; Copyright <script>document.write(new Date().getFullYear())</script></p>
+{#                <p class="pt20  wow fadeIn" data-wow-delay="1.4s">&copy; Copyright <script>document.write(new Date().getFullYear())</script></p>#}
 {#                <p class=" wow fadeIn" data-wow-delay="1.6s">Bootstrap<sup>4</sup> Theme By <a href="http://devcrud.com" class="text-light">DevCRUD</a></p>#}
             </div>
         </div>

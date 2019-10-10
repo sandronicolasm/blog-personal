@@ -84,7 +84,7 @@ class ContactAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('surname', null, ['label'=> 'Apellido'])
+            ->addIdentifier('surname', null, ['label'=> 'Apellido'])
             ->add('name', null, ['label'=> 'Nombre'])
             ->add('telephone', null, ['label'=> 'Teléfono'])
             ->add('email', null, ['label'=> 'Email'])
@@ -97,6 +97,7 @@ class ContactAdmin extends AbstractAdmin
         $datagridMapper
             ->add('surname', null, ['label'=> 'Apellido'])
             ->add('name', null, ['label'=> 'Nombre'])
+            ->add('telephone', null, ['label'=> 'Teléfono'])
             ->add('email', null, ['label'=> 'Email'])
         ;
     }
